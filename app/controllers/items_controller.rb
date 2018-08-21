@@ -1,4 +1,4 @@
-class ItemsController < OpenReadController
+class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :update, :destroy]
 
   # GET /items
@@ -46,6 +46,6 @@ class ItemsController < OpenReadController
 
     # Only allow a trusted parameter "white list" through.
     def item_params
-      params.require(:item).permit(:title, :why, :never, :never-ever, :image)
+      params.require(:item).permit(:title, :string, :why, :never, :never_ever, :omdb, :image, :number)
     end
 end
