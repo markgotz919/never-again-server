@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :items
   # RESTful routes
+  resources :items
   resources :examples, except: %i[new edit]
   resources :users, only: %i[index show update]
 
