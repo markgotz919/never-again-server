@@ -1,3 +1,3 @@
 class ItemSerializer < ActiveModel::Serializer
-  attributes :id, :title, :string, :why, :never, :never_ever, :omdb, :image, :number
+  attributes :id, :title, :why, :never, :never_ever, :omdb, :number
 end
